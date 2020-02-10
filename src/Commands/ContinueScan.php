@@ -1,10 +1,8 @@
-<?php
-
+<?php declare(strict_types=1);
 
 namespace Hyperized\Clamd\Commands;
 
-
-class ContinueScan
+class ContinueScan extends ScanCommand
 {
-    public const COMMAND = 'CONTSCAN';
+    public static $command = 'CONTSCAN';
 }

@@ -1,10 +1,8 @@
-<?php
-
+<?php declare(strict_types=1);
 
 namespace Hyperized\Clamd\Commands;
 
-
-class MultiScan
+class MultiScan extends ScanCommand
 {
-    public const COMMAND = 'MULTISCAN';
+    public static $command = 'MULTISCAN';
 }

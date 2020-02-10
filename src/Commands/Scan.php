@@ -1,18 +1,10 @@
-<?php
-
+<?php declare(strict_types=1);
 
 namespace Hyperized\Clamd\Commands;
 
+use Hyperized\Clamd\Abstracts\FileScanCommand;
 
-class Scan extends ScanCommand
+class Scan extends FileScanCommand
 {
-    public function __construct(string $uri)
-    {
-        // TODO
-    }
-
-    public function get()
-    {
-        // TODO: Implement get() method.
-    }
+    public static $command = 'SCAN';
 }

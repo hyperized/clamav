@@ -1,0 +1,10 @@
+---
+version: '3.7'
+
+services:
+  clamd:
+    image: hyperized/clamd:latest
+    ports:
+      - "127.0.0.1:3310:3310"
+    volumes:
+      - .:/project

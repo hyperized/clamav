@@ -1,10 +1,8 @@
-<?php
-
+<?php declare(strict_types=1);
 
 namespace Hyperized\Clamd\Commands;
 
-
-class AllMatchScan
+class AllMatchScan extends ScanCommand
 {
-    public const COMMAND = 'ALLMATCHSCAN';
+    public static $command = 'ALLMATCHSCAN';
 }
